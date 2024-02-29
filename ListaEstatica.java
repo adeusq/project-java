@@ -7,6 +7,22 @@ public class ListaEstatica {
         numero_elementos = 0;
     }
 
+    public boolean lista_Vazia() {
+        if (numero_elementos == 0) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean lista_Cheia(){
+        if (numero_elementos == vetor_elementos.length) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     public void adicionarFinal(int valor) {
         if (lista_Cheia()) {
             System.out.println("Lista cheia!");
@@ -104,21 +120,6 @@ public class ListaEstatica {
             return -1;
         }
         
-    public boolean lista_Vazia() {
-        if (numero_elementos == 0) {
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    public boolean lista_Cheia(){
-        if (numero_elementos == vetor_elementos.length) {
-            return true;
-        }else{
-            return false;
-        }
-    }
 
     public int getNumero_elementos() {
         return numero_elementos;
